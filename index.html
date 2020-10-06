@@ -7,11 +7,24 @@
     </head>
     <body>
         <div>
-            <button type="button">Add New Book</button>
+            <button type="button" id="new-book-btn">Add New Book</button>
         </div>
         <div id="form-container">
             <div id="book-form">
-            
+                <div id="text-inputs">
+                    <label for="title">Title</label>
+                    <input id="title" name="title" type="text">
+                    <label for="author">Author</label>
+                    <input id="author" name="author" type="text">
+                    <label for="pages">Pages</label>
+                    <input id="pages" name="pages" type="number" min="1">
+                </div>
+                <div id="read-status">
+                    <label name="read">Already Read?</label>
+                    <input id="read" name="read" type="checkbox">
+                </div>
+                <button id="add-book" type="button">Add</button>
+                <button id="cancel-btn" type="button">Cancel</button>
             </div>
         </div>
         <div id="table-container">

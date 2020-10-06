@@ -9,9 +9,16 @@
 }
 
 #book-form{
-    width: 40%;
+    width: 35%;
     position: relative;
     margin:1rem auto;
+    padding: 20px;
     border: 2px solid black;
     border-radius: 12px;
+    line-height: 2rem;
+}
+
+#text-inputs{
+    display: flex;
+    flex-direction: column;
 }

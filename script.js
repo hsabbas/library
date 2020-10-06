@@ -1,11 +1,18 @@
 let myLibrary = [];
 const table = document.getElementById("library-table");
+const newBookButton = document.getElementById("new-book-btn");
+const formContainer = document.getElementById("form-container");
+newBookButton.addEventListener("click", openForm);
 
 function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
+}
+
+Book.prototype.toggleRead = function(){
+    this.read = !this.read;
 }
 
 function addBookToLibrary(newBook) {
@@ -43,4 +50,8 @@ function remove(e){
     let index = e.target.parentElement.parentElement.rowIndex;
     removeBookFromTable(index);
     removeBookFromLibrary(index - 1);
+}
+
+function openForm(){
+    formContainer.style.display = "block";
 }
