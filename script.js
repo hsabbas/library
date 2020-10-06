@@ -1,7 +1,7 @@
 let myLibrary = [];
 const table = document.getElementById("library-table");
 
-function book(title, author, pages, read){
+function Book(title, author, pages, read){
     this.title = title;
     this.author = author;
     this.pages = pages;
